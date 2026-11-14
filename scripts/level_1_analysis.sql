@@ -1,0 +1,31 @@
+ SELECT [symbol]
+,[company_name]
+,CONCAT(100*(round(net_profit/nullif(equity,0),4)),'%') as [ROE]
+,case when eps<0 then  null 
+else round(price/nullif(eps,0),4)
+end as pe
+,concat(round(100*(eps/nullif(price,0)),4),'%')as [Earning_yeild]
+,round(total_debt/nullif(equity,0),4) as [de]
+,round(market_cap/10000000,4)as [Market_Cap_Cr]
+,[eps]
+,is_financial
+/*    ,[price]
+      ,[eps]
+      ,[net_profit]
+      ,[total_debt]
+      ,[equity]
+      ,[market_cap]
+      ,[revenue]
+      ,[operating_income]
+      ,[total_assets]
+      ,[current_assets]
+      ,[current_liabilities]
+      ,[dividend_per_share]
+      ,[book_value_per_share]
+      ,[free_cash_flow]
+      ,[sector]
+      ,[is_financial]
+      ,[filled_fields]
+      ,[pulled_at]
+ */
+ FROM [stock_analytical_project_1].[dbo].[nifty50_fundamentals]

@@ -2,8 +2,6 @@
 
 Rank all 50 Nifty 50 stocks on value, quality, and risk. Python pulls the data. SQL Server calculates the measures and ranks. Power BI shows the results.
 
-![Valuation and Quality Scorecard](images/valuation_quality_scorecard.png)
-
 ---
 
 ## Business question
@@ -211,11 +209,9 @@ Update the `SYMBOLS` list in the script if NSE changes the Nifty 50 index.
 
 ---
 
-## Next steps
-
-- Add a sector-neutral ranking next to the market-wide ranking.
-- Add historical snapshots to track rank changes over time.
-- Add bank-specific measures (for example, NIM and NPA) for Financials.
+## ⚠️ Disclaimer
+ 
+This is a student project for learning and portfolio use only. It is not investment advice, and the data may be late, incomplete, or wrong. Do not use it for real investment decisions.
 
 ---
 

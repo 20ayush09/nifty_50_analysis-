@@ -159,25 +159,6 @@ The query ranks all 50 stocks on three measures using `PERCENT_RANK()`, then com
 
 ---
 
-## Dashboard
-
-### Page 1 – Valuation & Quality Scorecard
-Weighted rank, value-versus-quality scatter plot, sector quintiles, composite z-score, and a z-score heat map. Filters: grade, company, sector.
-
-![Valuation and Quality Scorecard](images/valuation_quality_scorecard.png)
-
-### Page 2 – Company Valuation & Efficiency Ratios
-Top 10 current ratio, price to book, and return on assets. Top 5 dividend yield. Net and operating profit margin.
-
-![Valuation and Efficiency Ratios](images/valuation_efficiency_ratios.png)
-
-### Page 3 – Fundamental Financial Overview
-Bottom 10 debt to equity and P/E. Market cap treemap by sector. ROE for all companies.
-
-![Fundamental Financial Overview](images/fundamental_financial_overview.png)
-
----
-
 ## How to run
 
 1. **Install packages.**
